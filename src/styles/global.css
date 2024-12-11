@@ -1,0 +1,11 @@
+:root{
+    --primary: #FFF98A;
+    --bck-color-primary: #181818;
+    --font-title: 'Oswald', sans-serif;
+    --font-content: 'Roboto', sans-serif;
+    --secondary-text: #9b9b9b;
+}
+
+html{
+    background-color: var(--bck-color-primary);
+}
