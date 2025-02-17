@@ -1,19 +1,33 @@
+import { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Services from './components/Services';
 import SpecialOffer from './components/SpecialOffer';
-import './styles/global.css';
 import Footer from './components/Footer';
+import NewBranch from './components/NewBranch';
+import './styles/global.css';
+import Courses from './components/Courses';
+import Branches from './components/Branches';
 
 function App() {
+  //para mostrar el aviso de la nueva sucursal
+  const [showModal, setShowModal] = useState(true);
+
   return (
-    <div className="min-h-screen">
-      <Navbar />
-      <Hero />
-      <Services />
+    <>
+      <div className={`main ${showModal ? 'blur' : ''}`} id="main">
+        <Navbar />
+        <Hero />
+        <Services />
+        <Courses />
+        <Branches />
+        <Footer />
+      </div>
+
+      {/* nueva sucursal */}
+      {showModal && <NewBranch setShowModal={setShowModal} />}
       <SpecialOffer />
-      <Footer/>
-    </div>
+    </>
   );
 }
 

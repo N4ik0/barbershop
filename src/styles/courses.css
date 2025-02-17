@@ -1,0 +1,142 @@
+/* General section styles */
+.classes-section {
+    padding: 80px 0;
+    color: white;
+  }
+  
+  /* Container */
+  .classes-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 16px;
+    gap: 2rem;
+  }
+  
+  .classes-title {
+    font-family: var(--font-title);
+    text-transform: uppercase;
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: bold;
+    padding-bottom: 2rem;
+  }
+  
+  .classes-description {
+    max-width: 500px;
+    color: var(--secondary-text);
+    font-size: 1.3rem;
+    line-height: 1.4rem;
+  }
+  
+  /* Grid */
+  .classes-grid {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .class-type{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem;
+    font-size: 1.3rem;
+    max-width: 450px;
+    height: 250px;
+    background-color: #161616;
+  }
+
+  .class-title{
+    max-width: 300px;
+    font-family: var(--font-title);
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 2rem;
+  }
+
+  .class-description{
+    color: var(--secondary-text);
+    font-family: var(--font-content);
+    font-size: 1.3rem;
+    line-height: 1.4rem;
+    font-weight: lighter;
+  }
+  
+  .class-price{
+    position: relative;
+    font-family: var(--font-title);
+    font-weight: bolder;
+    color: var(--primary);
+    transition: color 0.3s ease;
+  }
+
+  .class-price::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary);
+    transition: width 0.4s ease;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .class-price::after {
+    bottom: 0;
+  }
+
+  .class-price:hover::after {
+    width: 100%;
+  }
+
+  
+  /* Book Now button */
+  .book-button {
+    font-family: var(--font-title);
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    align-self: center;
+    background-color: var(--primary);
+    color: black;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .book-button:hover {
+    background-color: transparent;
+    padding: 8px;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+  }
+  
+
+  @media(max-width: 700px){
+    .classes-grid{
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .classes-title{
+      font-size: 2rem;
+    }
+    .classes-description{
+      font-size: 1.2rem;
+    }
+    .class-title{
+      font-size: 1.5rem;
+    }
+    .class-description{
+      font-size: 1.1rem;
+    }
+  }

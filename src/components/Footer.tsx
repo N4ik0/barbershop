@@ -1,13 +1,13 @@
 import '../styles/footer.css';
-import Logo from "/assets/icons/tiranoo.svg";
-import { Phone, MapPin, Facebook, Instagram, Twitter, Clock } from "lucide-react";
+import Logo from "/assets/icons/tirano-logo-principal.png";
+import { Phone, MapPin, Clock } from "lucide-react";
 
 export default function Footer() {
     return (
         <div className="footer">
             <div className="footer-logo">
                 <img src={Logo} alt="Logo" className="footer-logo-icon" />
-                <div className="footer-logo-title">Tiranos</div>
+                <a className="footer-logo-title" href='#Inicio'>Tiranos</a>
             </div>
             <div className="footer-contact">
                 <div className="footer-item">
@@ -31,7 +31,7 @@ export default function Footer() {
                         <span className="footer-text">Av. Bernardo O'Higgins 77, Talagante, Región Metropolitana</span>
                     </a>
                     </div>
-                <div className="footer-rrss">
+                {/* <div className="footer-rrss">
                     <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
                         <Facebook size={24} className="footer-icon" />
                     </a>
@@ -41,7 +41,7 @@ export default function Footer() {
                     <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
                         <Twitter size={24} className="footer-icon" />
                     </a>
-                </div>
+                </div> */}
             </div>
             <div className='opening-hour'>
                 <div>

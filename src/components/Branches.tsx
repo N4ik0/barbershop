@@ -1,0 +1,33 @@
+import '../styles/Branches.css'; // Importa el archivo CSS
+import branches from '../data/branches.json'; // Ajusta la ruta según la ubicación del archivo
+
+const Branches = () => {
+  return (
+    <section className="branches-section" id='Sucursales'>
+      <div className="branches-container">
+        <div className="branches-header">
+          <h2 className="branches-title">Nuestras Sucursales</h2>
+          <p className="branches-description">
+            Visítanos en cualquiera de nuestras sucursales y disfruta de un servicio de primera.
+          </p>
+        </div>
+        <div className="branches-grid">
+          {branches.map((branch) => (
+            <div
+              className="branch-card"
+              key={branch.id}
+              style={{ backgroundImage: `url(${branch.image})` }}
+            >
+              <div className="branch-content">
+                <h3 className="branch-name">{branch.name}</h3>
+                <a className="branch-address" href={branch.direction} target="_blank" rel="noopener noreferrer">{branch.address}</a>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Branches;

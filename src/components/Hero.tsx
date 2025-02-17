@@ -23,7 +23,8 @@ const Hero = () => {
           <SwiperSlide key={index}>
             <div
               className="slide-background"
-              style={{ backgroundImage: `url(/assets/hero/${slide.image})` }}
+              id='Inicio'
+              style={{ backgroundImage: `url(/barbershop/assets/hero/${slide.image})` }}
             >
               <div className='slide-overlay'>
                 <div className="slide-content">

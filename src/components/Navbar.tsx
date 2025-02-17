@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { Menu } from 'lucide-react';
 import '../styles/Navbar.css';
-import Logo from '/assets/icons/tiranoo.svg';
+import Logo from '/assets/icons/tirano-logo-principal.png';
 
 export default function Navbar() {
   const [isInvisible, setInvisible] = useState(false);
@@ -54,19 +54,19 @@ export default function Navbar() {
             <div className="logo-title">Tiranos</div>
           </div>
           <div className={navLinksClass}>
-            <a className="nav-link" href="#">
+            {/* <a className="nav-link" href="#Inicio">
               Inicio
-            </a>
-            <a className="nav-link" href="#">
+            </a> */}
+            <a className="nav-link" href="#Servicios">
               Servicios
             </a>
-            <a className="nav-link" href="#">
+            <a className="nav-link" href="https://www.fresha.com/a/tiranos-talagante-avenida-bernardo-ohiggins-77-a29a3jau?pId=805178#modal-gallery">
               Galería
             </a>
-            <a className="nav-link" href="#">
-              Nosotros
+            <a className="nav-link" href="#Sucursales">
+              Sucursales
             </a>
-            <a className="nav-link" href="#">
+            <a className="nav-link" href="https://wa.me/+56972111501" target="_blank" rel="noopener noreferrer">
               Contáctanos
             </a>
           </div>
