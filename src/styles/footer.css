@@ -44,12 +44,33 @@
     max-width: 300px;
 }
 
-.footer-numbers{
-    width: 250px;
+.footer-phone,
+.footer-whatsapp {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.footer-numbers {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    align-items: flex-end;
+}
+
+.footer-numbre-item{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.footer-icon {
+    min-width: 24px;
+}
+
+.footer-icon-wsp{
+    height: 20px;
+    width: 20px;
+    filter: invert(1);
 }
 
 
@@ -60,8 +81,14 @@
     gap: 0.5rem;
 }
 
+.footer-icon-wsp{
+    height: 20px;
+    width: 20px;
+    filter: invert(1);
+}
 
 .map{
+    padding-top: 30px;
     line-height: 1.3rem;
 }
 
@@ -85,7 +112,6 @@
 
 
 .footer-link {
-    height: 3rem;
     display: flex;
     align-items: center;
     gap: 0.5rem;

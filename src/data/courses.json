@@ -1,23 +1,16 @@
 [
     {
       "id": 1,
-      "title": "Curso Básico de Barbería",
-      "description": "Aprende los fundamentos de la barbería, incluyendo cortes clásicos, uso de herramientas básicas y técnicas de afeitado.",
-      "price": 50000,
+      "title": "Curso Básico de Barbería - 8 clases",
+      "description": "Aprende los fundamentos de la barbería, incluyendo cortes clásicos y degradados, uso de herramientas básicas y técnicas de afeitado.",
+      "price": 150000,
       "link": "https://www.tusitio.com/curso-basico"
     },
     {
       "id": 2,
-      "title": "Curso Avanzado de Estilos Modernos",
+      "title": "Curso Intermedio Avanzado de Estilos Modernos - 10 clases",
       "description": "Domina las últimas tendencias en cortes de cabello y barba, incluyendo técnicas de diseño y uso de herramientas especializadas.",
-      "price": 70000,
+      "price": 220000,
       "link": "https://www.tusitio.com/curso-avanzado"
-    },
-    {
-      "id": 3,
-      "title": "Taller de Barbería para Jóvenes",
-      "description": "Un curso diseñado especialmente para jóvenes que quieren aprender barbería como hobby o como futura profesión.",
-      "price": 30000,
-      "link": "https://www.tusitio.com/taller-jovenes"
     }
   ]

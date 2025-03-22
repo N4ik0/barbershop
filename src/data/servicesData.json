@@ -1,0 +1,31 @@
+[
+    {
+        "id": 1,
+        "title": "Corte de cabello",
+        "description": "Corte de cabello con masaje Viber FX",
+        "price": "$12.000",
+        "link": "https://www.fresha.com/a/tiranos-talagante-avenida-bernardo-ohiggins-77-a29a3jau?service=s%3A10383210&pId=805178"
+      },
+    {
+      "id": 2,
+      "title": "Corte + Barba",
+      "description": "Corte de cabello/mascarilla puntos negros/Afeitado & masajes Viber FX",
+      "price": "$14.990",
+      "link": "https://www.fresha.com/a/tiranos-talagante-avenida-bernardo-ohiggins-77-a29a3jau?service=s%3A10383210&pId=805178"
+    },
+    {
+      "id": 3,
+      "title": "Servicio VIP",
+      "description": "Corte de cabello + mascarilla negra + Barba vapozono toalla fría & masajes Viber XF más corte de cejas",
+      "price": "$17.990",
+      "link": "https://www.fresha.com/a/tiranos-talagante-avenida-bernardo-ohiggins-77-a29a3jau?service=s%3A10565728&pId=805178"
+    },
+    {
+        "id": 4,
+        "title": "Limpieza facial",
+        "description": "Tratamiento de limpieza profunda con exfoliación, extracción de impurezas, mascarilla hidratante y aplicación de tónico facial.",
+        "price": "$19.990",
+        "link": "https://www.fresha.com/a/tiranos-talagante-avenida-bernardo-ohiggins-77-a29a3jau?service=s%3A10565728&pId=805178"
+      }
+  ]
+  
