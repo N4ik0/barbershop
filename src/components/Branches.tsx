@@ -1,4 +1,4 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide, SwiperRef } from 'swiper/react';
 import { Navigation, Pagination, Autoplay, EffectFade } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -6,11 +6,28 @@ import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
 import '../styles/Branches.css'; // Importa el archivo CSS
 import branches from '../data/branches.json'; // Ajusta la ruta según la ubicación del archivo
+import { useEffect, useRef } from 'react';
+
+interface Branch {
+  id: number;
+  name: string;
+  address: string;
+  direction: string;
+  images: string[];
+}
+
 
 const Branches = () => {
-  const getImagesForSwiper = (images) => {
-    return images.length < 3 ? [...images, ...images] : images;
+  const getImagesForSwiper = (images: string[]): string[] => {
+    if (images.length < 3) {
+      const duplicatedImages = [...images, ...images];
+      console.log("Duplicando imágenes:", duplicatedImages); // Depuración
+      return duplicatedImages;
+    }
+    console.log("Imágenes originales:", images); // Depuración
+    return images;
   };
+
   return (
     <section className="branches-section" id='Sucursales'>
       <div className="branches-container">
@@ -21,7 +38,7 @@ const Branches = () => {
           </p>
         </div>
         <div className="branches-grid">
-          {branches.map((branch) => (
+          {branches.map((branch: Branch) => (
             <div
               className="branch-card"
               key={branch.id}
@@ -37,9 +54,11 @@ const Branches = () => {
                 autoplay={{ delay: 5000 }}
                 loop={true}
                 effect="fade" // Activa el efecto de desvanecimiento
+                slidesPerGroup={1}
+                slidesPerView={1}
                 className="swiper-container"
               >
-                {getImagesForSwiper(branch.images).map((image, index) => (
+                {getImagesForSwiper(branch.images).map((image: string, index: number) => (
                   <SwiperSlide key={index}>
                     <div
                       className="branch-image"
