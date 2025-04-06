@@ -8,7 +8,6 @@ import NewBranch from './components/NewBranch';
 import './styles/global.css';
 import Courses from './components/Courses';
 import Branches from './components/Branches';
-import SliderBranch from './components/SliderBranch';
 
 function App() {
   //para mostrar el aviso de la nueva sucursal
@@ -28,7 +27,7 @@ function App() {
 
       {/* nueva sucursal */}
       {showModal && <NewBranch setShowModal={setShowModal} />}
-      {/* <SpecialOffer /> */}
+      <SpecialOffer />
     </>
   );
 }
