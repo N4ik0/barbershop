@@ -6,6 +6,8 @@ import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
 import '../styles/Hero.css';
 import slides from '../data/slides';
+import BookNowButton from './BookNowButton';
+import branches from '../data/branches.json'; // Asegúrate de que la ruta sea correcta
 
 const Hero = () => {
   return (
@@ -30,7 +32,8 @@ const Hero = () => {
                 <div className="slide-content">
                   <h1 className="slide-title">{slide.title}</h1>
                   <p className="slide-description">{slide.description}</p>
-                  <button className="cta-button">
+                  
+                  {/* <button className="book-now-button">
                     <a
                     href='https://www.fresha.com/a/tiranos-talagante-avenida-bernardo-ohiggins-77-a29a3jau?pId=805178'
                     target="_blank"
@@ -39,7 +42,7 @@ const Hero = () => {
                   >
                     Agenda ahora
                     </a>
-                  </button>
+                  </button> */}
                 </div>
               </div>
               
@@ -47,6 +50,7 @@ const Hero = () => {
           </SwiperSlide>
         ))}
       </Swiper>
+      <BookNowButton data={branches}/>
     </div>
   );
 };

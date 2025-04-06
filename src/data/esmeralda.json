@@ -1,0 +1,9 @@
+[
+  {
+    "id": 1,
+    "name": "Talagante Esmeralda",
+    "address": "Esmeralda 1208, Talagante, Región Metropolitana",
+    "images": ["talagante_esmeralda.jpeg", "talagante_esmeralda_2.jpeg"],
+    "direction":"https://maps.app.goo.gl/5MqLGycAyVTQiWE18"
+  }
+]

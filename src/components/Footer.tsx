@@ -1,6 +1,6 @@
 import '../styles/footer.css';
 import Logo from "/assets/icons/tirano-logo-principal.png";
-import { Phone, MapPin, Clock } from "lucide-react";
+import { Phone, Clock, Instagram } from "lucide-react";
 import Wsp from "/assets/icons/whatsapp.png";
 
 export default function Footer() {
@@ -24,15 +24,45 @@ export default function Footer() {
                     <img src={Wsp} alt="WhatsApp" className="footer-icon-wsp" />
                     <div className='footer-numbers'>
                         <div className='footer-number-item'>
-                            <span className="footer-label">WhatsApp:</span>
-                            <span className="footer-text">+56937247327</span>
+                            <div className="footer-label">WhatsApp:</div>
+                            <div className="footer-text">
+                                <a
+                                    href="https://wa.me/+56937247327"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="footer-link"
+                                >
+                                    +56937247327
+                                </a>
+                                {/* +56937247327 */}
+                            </div>
                         </div>
                         <div className='footer-number-item'>
-                            <span className="footer-text">+56972111501</span>
+                            <div className="footer-text">
+                                <a
+                                    href="https://wa.me/+56972111501"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="footer-link"
+                                >
+                                    +56972111501
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div className="footer-item map">
+                    <a
+                        href="https://www.instagram.com/tiranos_esmeralda/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="footer-link"
+                    >
+                        <Instagram size={25} className="footer-icon" />
+                        <div className="footer-text">Tiranos Barber Club</div>
+                    </a>
+                </div>
+                {/* <div className="footer-item map">
                     <a
                         href="https://www.google.com/maps?daddr=Avenida+Bernardo+O%27Higgins+77,+Talagante,+Regi%C3%B3n+Metropolitana"
                         target="_blank"
@@ -42,7 +72,7 @@ export default function Footer() {
                         <MapPin size={25} className="footer-icon" />
                         <div className="footer-text">Av. Bernardo O'Higgins 77, Talagante, Región Metropolitana</div>
                     </a>
-                </div>
+                </div> */}
             </div>
             <div className='opening-hour'>
                 <div>Horario de atención</div>

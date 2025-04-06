@@ -38,7 +38,7 @@
     flex-direction: row;
     gap: 2rem;
   }
-  
+
   /* Branch Card */
   .branch-card {
     display: flex;

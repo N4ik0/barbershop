@@ -1,0 +1,9 @@
+[
+  {
+    "id": 2,
+    "name": "Talagante Bernardo O'Higgins",
+    "address": "Av. Bernardo O'Higgins 77, Talagante, Región Metropolitana",
+    "images": ["talagante_bernardo_ohiggins.jpeg", "talagante_bernardo_ohiggins_2.jpeg", "talagante_bernardo_ohiggins_3.jpeg"],
+    "direction": "https://maps.app.goo.gl/9cT4F42zVyeEquZ59"
+  }
+]

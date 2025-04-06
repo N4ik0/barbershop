@@ -2,6 +2,8 @@ import { useState, useEffect, useRef } from 'react';
 import { Menu } from 'lucide-react';
 import '../styles/Navbar.css';
 import Logo from '/assets/icons/tirano-logo-principal.png';
+import BookNowButton from './BookNowButton';
+import branches from '../data/branches.json';
 
 export default function Navbar() {
   const [isInvisible, setInvisible] = useState(false);
@@ -69,6 +71,9 @@ export default function Navbar() {
             <a className="nav-link" href="https://wa.me/+56972111501" target="_blank" rel="noopener noreferrer">
               Contáctanos
             </a>
+            {/* <div className='book-now-show'>
+              {menuOpen && (<BookNowButton data={branches}/>)}
+            </div> */}
           </div>
           <button className={menuButtonClass} onClick={handleMenuToggle}>
             {menuOpen ? (
@@ -77,7 +82,10 @@ export default function Navbar() {
               <Menu size={24} style={{color:'var(--primary)'}} />
             )}
           </button>
-          <button className="book-now-button">
+          <div className='book-now-show-desktop'>
+            <BookNowButton data={branches}/>
+          </div>
+          {/* <button className="book-now-button">
           <a
                   href='https://www.fresha.com/a/tiranos-talagante-avenida-bernardo-ohiggins-77-a29a3jau?pId=805178'
                   target="_blank"
@@ -86,7 +94,7 @@ export default function Navbar() {
                 >
                   Agenda ahora
                   </a>
-                  </button>
+                  </button> */}
         </div>
       </div>
     </nav>

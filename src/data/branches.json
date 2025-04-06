@@ -4,13 +4,15 @@
     "name": "Talagante Esmeralda",
     "address": "Esmeralda 1208, Talagante, Región Metropolitana",
     "images": ["talagante_esmeralda.jpeg", "talagante_esmeralda_2.jpeg"],
-    "direction":"https://maps.app.goo.gl/5MqLGycAyVTQiWE18"
+    "direction":"https://maps.app.goo.gl/5MqLGycAyVTQiWE18",
+    "link": "https://linktr.ee/tiranos_esmeralda"
   },
   {
     "id": 2,
     "name": "Talagante Bernardo O'Higgins",
     "address": "Av. Bernardo O'Higgins 77, Talagante, Región Metropolitana",
     "images": ["talagante_bernardo_ohiggins.jpeg", "talagante_bernardo_ohiggins_2.jpeg", "talagante_bernardo_ohiggins_3.jpeg"],
-    "direction": "https://maps.app.goo.gl/9cT4F42zVyeEquZ59"
+    "direction": "https://maps.app.goo.gl/9cT4F42zVyeEquZ59",
+    "link": "https://www.fresha.com/a/tiranos-talagante-avenida-bernardo-ohiggins-77-a29a3jau?pId=805178"
   }
 ]

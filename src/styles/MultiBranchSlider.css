@@ -1,0 +1,16 @@
+.multi-branch-slider {
+  display: flex;
+  max-width: 1500px;
+  width: 100%;
+  flex-direction: row;
+  gap: 40px;
+}
+
+
+
+@media(max-width: 768px) {
+  .multi-branch-slider {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
